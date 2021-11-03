@@ -1,0 +1,8 @@
+---
+- name: Example from an Ansible Playbook
+  ansible.builtin.ping:
+  when: ansible_os_family == 'Redhat'
+
+- name: Example from an Ansible Playbook
+  ansible.builtin.win_ping:
+  when: ansible_os_family == 'Windows'
